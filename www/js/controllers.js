@@ -1,7 +1,7 @@
 angular.module('your_app_name.controllers', ['ionic','firebase'])
 
 .controller('AuthCtrl', function($scope, $ionicConfig) {
-
+	console.log('auth controller');
 })
 
 // APP
