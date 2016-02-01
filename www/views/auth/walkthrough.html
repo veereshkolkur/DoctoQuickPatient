@@ -1,0 +1,43 @@
+<ion-view class="walkthrough-view" cache-view="false" hide-back-button="true">
+        <ion-content class="padding-top">
+          <div class="logo_container">
+            <img class="logo " ng-src="img/dq_login_logo.png" >
+          </div>
+
+
+          <form novalidate name="loginForm" ng-submit="loginForm.$valid && signIn(user)">
+          <div class="list">
+            <label class="item item-input phone_field text-center" >
+                <input  type="text" placeholder="Phone Number" name="user_phone" ng-model="user.phone" required autofocus>
+            </label>
+            <label class="item item-input password_field " show-hide-container>
+                <input  type="password" placeholder="Password" name="user_pin" ng-model="user.pin" required show-hide-input autofocus>
+            </label>
+            <button class="login_button button button-block button-stable " ng-click="doLogIn();" >
+              Login
+            </button>
+            <div class="conditions" >
+                      <p class="login-fonts text-center">By Logging in you agree to our <a href="#">Terms&Conditions</a></p>
+            </div>
+          <!--  <label class="item item-input " show-hide-container>
+                <input  type="password" placeholder="Password" name="user_pin" ng-model="user.pin" required show-hide-input autofocus>
+            </label>-->
+            <button class="login_button button button-block button-calm " ui-sref="auth.patientRegistration1" >
+              Register
+            </button>
+          </div>
+
+          <div class="padding-top text-center">
+
+          </div>
+        </form>
+        </ion-content>
+        <div class="row row-bottom bottom">
+             <a  class="col button button-small button-clear  "  ui-sref="auth.demo">
+               <img class="img2" ng-src="img/button_change.png"><br><p class="doc_reg" style="text-align: center">Learn More</p>
+             </a>
+             <a class="col col-50 button button-small button-clear  "  ui-sref="auth.doctorRegistration">
+               <img class="img2" ng-src="img/doc_symbol.png"><br><p class="doc_reg" style="text-align: center">Register as a Doctor</p>
+             </a>
+       </div>
+</ion-view>

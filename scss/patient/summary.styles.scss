@@ -1,0 +1,144 @@
+.summary-view
+{
+  background-color: #e2e2e2 !important;
+  font-family: Ubuntu,bold,sans-serif !important;
+  .item-icon-right .icon {
+     right: 20px;
+ }
+.item-avatar{
+ background-color: #e2e2e2;
+ width: 100%;
+ width: 100vmin;
+ text-align: center;
+ margin-top: 2vh;
+ border: none;
+ padding-bottom: 2px;
+ img{
+  margin-top: -2vh !important;
+  max-width: 100%;
+  max-height: 100%;
+  width: 18vmin;
+  height: 17vmin;
+  padding: 5px;
+  background-color: #dedad7 !important;
+  margin-left: 1vw;
+ }
+}
+
+.item-avatar:first-child {
+border-top: none;
+}
+.item-avatar:last-child {
+border-bottom: none;
+display: block;
+position: absolute;
+margin-bottom:80px !important;
+}
+h2{
+  font-size: 5vw;
+  font-weight: 400;
+  color: #4b4b4b;
+  margin-top: -1vh !important;
+
+}
+.practice{
+  margin-left: -2vw !important;
+  margin-top: -2vh;
+}
+.degrees{
+  margin-top: -1vh;
+}
+.card{
+
+  font-size: 4vw;
+  margin-top: 8vh;
+  max-width: 100%;
+  width:90vmin;
+  margin-left: 6vw;
+}
+.right-side{
+  text-align: right;
+}
+.summary-content{
+
+}
+p{
+  //background-color: red;
+  font-size: 3vw !important;
+  padding-bottom:  2px;
+  margin-top: 0vh;
+  margin-left:-16vw;
+  span{
+    //background-color: red;
+    margin-left: 2vw;
+    font-size: 3vw;
+  }
+
+}
+.textform{
+  max-width: 100%;
+  width:85vmin !important;
+  height: 25vh;
+  //background-color: red;
+  margin-top: 1vh ;
+  margin-left: 8vw;
+
+  top: 5;
+  textarea{
+    position: relative;
+    max-width: 100%;
+    width: 85vmin;
+    margin-top: 0vh !important;
+    height: 15vh !important;
+    font-size: 5vw;
+  }
+  button
+  {
+    max-width: 100%;
+    width: 22vmin;
+    background-color: #69a33d;//$auth-login-btn-bg;//login button color
+    margin-left: 20vw !important;
+    color: white;
+    font-weight: lighter;
+    margin-top: 2vh;
+    box-shadow: initial 0px 10px 10px -10px rgba(0,0,0,0.8);
+  }
+}
+	.top-content
+	{
+		height: 8%;
+		text-align: center;
+    margin-top: 7vh;
+    h2{
+      text-align: center;
+      font-size:4vw;
+      padding: 25px;
+
+    }
+	}
+
+	.bottom-content
+	{
+		height: 25%;
+		padding-top: 5px;
+		margin-top: 0px;
+
+		.button
+		{
+			border: none;
+			color: $auth-color;
+			font-weight: bolder;
+			font-size: 20px;
+		}
+
+		.login.button
+		{
+			background-color: $auth-login-btn-bg;
+		}
+
+		.sign-up.button
+		{
+			background-color: $auth-signup-btn-bg;
+		}
+	}
+}

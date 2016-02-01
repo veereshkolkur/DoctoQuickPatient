@@ -1,0 +1,55 @@
+<ion-view class="doctor-profile-view" cache-view="false">
+  <ion-nav-title>
+    <span>Doctor Profile</span>
+  </ion-nav-title>
+  <ion-content scroll="false">
+    <div class="profile-container">
+      <div class="user-image-container">
+        <pre-img ratio="_1_1" helper-class="rounded-image">
+          <!--<img class="user-image" ng-src="https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg" spinner-on-load>-->
+          <img class="user-image " ng-src="img/doc.jpg" spinner-on-load>
+            <img class="doctor-online " ng-src="" spinner-on-load>
+        </pre-img>
+        <h1>Dr.FirstName LastName</h1>
+        <h2>General medicin, Degrees</h2>
+        <h3>practicing since 10 yers</h3>
+      </div>
+
+    </div>
+    <div class="top-content row">
+      <div class="col col-center">
+        <div class="card row">
+        <div class="  col">
+          Rating
+        </div>
+        <div class=" col">
+          4.9/23
+        </div>
+        <div class=" col">
+          *****
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-content row">
+      <div class="col col-center">
+        <h4>Request a consultation via</h4>
+      </div>
+    </div>
+    <div class="row">
+      <button type="submit" class="video-call button button-stable button-block"  ng-click="showConfirm();">
+      Voice Call
+    </button>
+      </div>
+    <div class="row">
+    <button type="submit" class="video-call button button-stable button-block" ng-click="showConfirm();">
+      Video Call
+    </button>
+    </div>
+
+      <h5> Consultation fee: $123</h5>
+
+
+
+  </ion-content>
+</ion-view>

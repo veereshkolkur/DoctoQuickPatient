@@ -1,0 +1,133 @@
+.docprofile-view
+{
+  background-color:#e2e2e2 !important;// $profile-bg !important;
+
+    font-family: Ubuntu,bold,sans-serif !important;
+
+  .profile-container
+  {
+    margin: 10px 10px;
+    margin-top: 0vh;
+  //  margin-top: 0vh;
+    margin-bottom: 0vh;
+    text-align: center;
+    //background-color: red;
+
+  }
+
+  .user-image-container
+  {
+    width: $image-width;
+    background-color:#e2e2e2;
+
+    .user-image
+    {
+      //border-top: 1px solid $content-color;
+      padding: 5px;
+      background-color:#dedad7 !important;// $profile-bg;
+      width: 25%;
+      border-radius: 50%;
+      margin-top: 6vh;
+      //add one more image
+    }
+  }
+
+  .user-name
+  {
+    position: absolute !important;
+    margin-top: 7vh;
+
+    padding-left: 10px;
+    padding-right: 20px;
+    width: 100%;
+    margin-left: 28vw;
+
+    //font-family: Ubuntu,normal,sans-serif;
+
+    h4{
+
+      font-family: Ubuntu,bold,sans-serif;
+    }
+
+  }
+
+  .rating{
+    position: absolute !important;
+    margin-top:14vh;
+    margin-left: 28vw;
+    padding-left: 10px;
+    padding-right: 20px;
+    width: 200px;
+
+  }
+  .top-content
+  {
+  //  border-bottom: 0px solid $content-color;
+    position: absolute !important;
+    height: 10vh;
+    margin-bottom: 1vh;
+    //background-color: red;
+  }
+
+  .user-background-image-outer
+  {
+    height: 120vh;
+    position:relative ;//absolute;
+    width: 10%;
+    left: 0;
+    top: 0;
+  }
+
+  .bottom-content
+  {
+    position: absolute !important;
+    margin-top: 20vh !important;
+    width: 100%;
+    height: auto;
+    padding: 20px ;
+  //  background-color: blue;
+
+
+//profile details css
+    .user-bio
+    {
+      text-align: left;
+      margin: 10px 1px;
+      padding: 10px 10px;
+    }
+
+  .card{
+    min-height: 2vh;
+    position: relative;
+    margin-top: -1vh;
+    margin-left: 1vw;
+    margin-right: 10vw;
+    margin-bottom: 2vh;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    //  padding: 0px 0px;
+  }
+//for profile details
+
+      //language
+      .profile-content3{
+
+      //  position: relative;
+        text-align: left;
+        margin:10px;
+        padding:15px;
+        //border:1px solid red;
+
+      }
+
+  }
+   .user-image-container
+     {
+       position: absolute;
+       width:100% !important;
+       margin-left: 2vw;
+       margin-top: -5vh;
+       background-color: green;
+     }
+}

@@ -1,0 +1,91 @@
+.patient-reg-3-view
+{
+	ion-content{
+		overflow-y: scroll !important;
+	}
+	font-family: Ubuntu,bold,sans-serif !important;
+	img{
+		margin-top: 7vh;
+		margin-left: 27vw;
+		max-width: 100%;
+		width: 47vmin !important;
+		height: auto !important;
+	}
+	h1{
+		font-size: 4vw;
+		text-align: center;
+		margin-left: 15vw;
+		margin-right: 15vw;
+	}
+	h2{
+		font-size: 5vw;
+		text-align: center;
+		margin-top: 4vh;
+		margin-left: 15vw;
+		margin-right: 15vw;
+	}
+	.formdata{
+		max-width: 100%;
+		padding-right: 25px;
+		margin-top: 8vh;
+		margin-left: 5vw;
+		.item.item-input{
+
+			box-shadow: 1px 1px 1px 0px #888888;
+			}
+			::-webkit-input-placeholder {
+					 //color: teal;
+					 font-size: 3vw;
+					 font-weight: bold;
+					 text-align:  right;
+				}
+
+	}
+	.login.button
+				{
+					width:40%;
+					margin-top: 10vh;
+					background-color: #6aa13e;
+					padding-left: 20px;
+					font-size: 15px;
+					margin-left: 3vw;
+					border-radius: 3px;
+					box-shadow: 1px 1px 1px 0px #888888;
+				}
+				.button-container
+				{
+				position: relative;
+				margin-left: 8vw;
+				}
+				h3{
+					font-size: 3.3vw;
+					color: white;
+					text-align: center;
+					font-weight: 300;
+					p{
+						color: inherit;
+						font-size: inherit;
+					}
+				}
+				//@media only screen(min-device-width: 320px){
+						margin-top: 5vh;
+						background-color: red;
+						h4{
+							font-size: 3.3vw;
+							color: white;
+							text-align: center;
+
+							margin-top: 10vh;
+							font-weight: 300;
+							p{
+								margin-top: 2vh;
+								color: inherit;
+								font-size: inherit;
+								a{
+									color: inherit;
+								}
+							}
+						}
+				//}
+
+}

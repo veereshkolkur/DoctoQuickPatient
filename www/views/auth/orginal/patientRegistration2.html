@@ -1,0 +1,54 @@
+<ion-view title="Patient Registration2"  class="pateint-view" cache-view="false">
+
+<div class="top-content row">
+    <ion-content padding="'true'" class="has-header">
+  <center>  <img src="img/iOS-Assets-v01_patient_registration_progress2.png" width="50%" height="auto" style="width: 50%; height: auto;"></center>
+    <div>
+
+        <center>
+            <font><h5>Age,gender,email &amp; password</h5></font>
+        </center>
+
+    </div>
+    <form class="list">
+        <label class="item item-input" name="doc_phnum">
+            <input type="tel" placeholder="Mobile Number">
+        </label>
+        <div class="button-bar">
+            <button class="button button-light button-block  icon-left ion-male" ng-click="gender();">Male</button>
+            <button class="button button-light button-block  icon-left ion-female" ng-click="gender();">Female</button>
+        </div>
+        <label class="item item-input" name="pat_email">
+            <input type="email" placeholder="Email">
+        </label>
+        <div class="spacer" style="width: 300px; height: 9px;"></div>
+        <label class="item item-input" name="pat_email">
+            <input type="password" placeholder="Password">
+        </label>
+        <div>
+
+            <center>
+                <font size="2">Prescription and consultation receipts will be mailed to this email address</font>
+            </center>
+        </div>
+
+</div>
+
+            <div class="bottom-content col">
+              <a  class="login button button-stable button-block" ui-sref="auth.patientRegistration3">Next</a>
+            <!--<a menu-close="" href="#/page3" class="button button-balanced button-block ">Next</a>-->
+
+
+                <center>
+                    <font size="2">By signing in I agree to DoctorQuicks
+                        <a href="#/">Terms&amp;Conditions</a>
+                    </font>
+                </center>
+
+
+
+            </div>
+
+        </form>
+    </ion-content>
+</ion-view>

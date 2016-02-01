@@ -1,0 +1,141 @@
+.doctor-profile-view
+{
+  background-color: #e2e2e2 !important;
+  font-family: Ubuntu,bold,sans-serif !important;
+  body{
+    width: 100;
+    height: auto;
+    min-width: 320px;
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-family: Ubuntu,bold,sans-serif !important;
+  }
+  .user-image
+    {
+      //border-top: 1px solid $content-color;
+      padding: 7px;
+      background-color:#dedad7 !important;// $profile-bg;
+      margin-left: 4vw;
+      border-radius: 60%;
+      //add one more image
+      width: 25vmin;
+    }
+  .profile-container
+     {
+         margin-top: 4vh;
+         margin-bottom: 1vh;
+         margin-left: 1vh;
+         margin-right: 100px ;
+         text-align: center;
+         padding:20px;
+
+     }
+   .user-image-container
+   {
+     width:60% !important;
+     height:auto;
+     margin-left: 30vw;
+     margin-top: -4vh;
+   }
+   .doctor-online{
+      padding: 10px 10px 10px 10px;
+      margin-left:24vw;
+      margin-top: 2px;
+      background-color:#adcb3a !important;// $profile-bg;
+      border-radius: 50%;
+    }
+   h1{
+     position: absolute;
+     width: 100%;
+     font-size: 5vw;
+     margin-left:-33vw;
+     margin-top: -5vh !important;
+     padding-bottom: 2%;
+     //margin-left: 16vw;
+     word-spacing: 1px;
+     text-align: center;
+     color: black;
+     font-weight: 500;;
+
+   }
+   h2{
+     position: absolute;
+     width: 100%;
+     font-size: 4vw;
+     margin-left:-33vw;
+     margin-top: 0vh !important;
+     padding-bottom: 2%;
+     //margin-left: 16vw;
+     word-spacing: 1px;
+     line-height: 2px;
+     text-align: center;
+     font-weight:  normal;;
+     color: black;
+
+   }
+   h3{
+     position: absolute;
+     width: 100%;
+     font-size: 4vw;
+     margin-left:-33vw;
+     margin-top: 3vh !important;
+     padding-bottom: 2%;
+     line-height: 2px;
+     word-spacing: 1px;
+     line-height: -2px;
+     text-align: center;
+     font-weight:  normal;;
+     color: black;
+
+   }
+
+	.top-content
+	{
+		height: 18%;
+		text-align: center;
+  //background-color: red;
+  .card{
+    padding-top:  13px !important;
+    padding-left: 10px;
+    max-width: 100%;
+    width: 90vmin !important;
+    height: 60px;
+    text-align: left;
+  }
+	}
+  .bottom-content
+	{
+    margin-top: 5vh;
+		height: 8%;
+		text-align: center;
+    //background-color: red;
+    h4{
+      font-size: 5vw;
+      font-weight: 400;
+    }
+
+	}
+  h5{
+    font-size: 4vw;
+    font-weight: 400;
+    text-align: center;
+  }
+  .button
+{
+  border-top: 2px;
+  color: $auth-color;
+  font-weight: medium;//bold
+  font-size: 4vw;//previous val 20
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  padding:5px 10px;
+}
+.video-call.button
+{
+  background-color: #6aa13e//$auth-login-btn-bg;//login button color
+
+}
+
+
+}

@@ -1,0 +1,47 @@
+<ion-view title="Patient Registration3">
+    <ion-content padding="'true'" class="has-header">
+        <div class="spacer" style="width: 300px; height: 18px;"></div>
+        <center><img src="img/iOS-Assets-v01_patient_registration_progress3.png" width="50%" height="auto" style="width: 50%; height: auto;"></center>
+        <div class="spacer" style="width: 300px; height: 14px;"></div>
+        <div>
+
+            <center>
+                <font>Please enter the four digit verification code sent to +91912345678</font>
+            </center>
+
+        </div>
+        <div class="spacer" style="width: 300px; height: 27px;"></div>
+        <form class="list">
+            <label class="item item-input" name="otp">
+                <input type="number" placeholder="PIN">
+            </label>
+        </form>
+      <center>
+        <button class="button button-balanced  ">Resend&nbsp; </button>
+        <button type="submit" class="login button button-balanced " ng-click="doLogIn();" ng-disabled="(login_form.user_phone.$invalid || login_form.user_pin.$invalid) : false">
+          Confirm
+        </button>
+      <!--  <button type="submit" class="login button button-balanced  ng-click="doLogIn();"">Confirm</button>-->
+      </center>
+        <div>
+            <center>
+                <font>Din't receive a text from DoctorQuick?
+                    <br>Tap Resend.</font>
+            </center>
+        </div>
+        <div class="spacer" style="width: 300px; height: 27px;"></div>
+        <div>
+
+            <center>
+                <font size="2">By signing in i agree to DoctorQuicks
+                    <a href="#/">Terms&amp;Conditions</a>
+                </font>
+            </center>
+
+        </div>
+        <!--<div class="button-bar">
+            <button class="button button-stable button-block ">1</button>
+            <button class="button button-stable button-block ">2</button>
+        </div>-->
+    </ion-content>
+</ion-view>

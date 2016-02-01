@@ -1,0 +1,104 @@
+.doctor-reg-view
+{
+		body{
+			min-width: 320px !important;
+			min-height: 480px !important;
+		}
+	ion-content{
+		overflow-y: scroll !important;
+	}
+
+	.doct
+				{
+
+						font-size: 6vw;
+						text-align: center;
+						font-weight: 500;
+						margin-top: 4vh;
+
+				}
+				img{
+					margin-top: 4vh;
+					margin-left: 32vw;
+					max-width: 100%;
+					width: 37vmin !important;
+					height: auto !important;
+
+				}
+				.dqdesc
+					{
+
+							font-size: 4vw;
+
+							padding-right: 40px;
+							text-align: center;
+							margin-left: 10vw;
+							margin-right: 0px;
+							margin-top: 2vh;
+							//font-weight: bold;
+						font-family: Ubuntu,normal,sans-serif;
+
+					}
+					.item.item-input
+					{
+
+						max-width:  100%;
+						width: 80vmin;
+						height: 15vmin;
+						margin-top: 3vh;
+						margin-left: 10vw;
+						margin-bottom: 2vh;
+						border-radius: 3px;
+						box-shadow: 1px 1px 1px 0px #888888;
+
+					}
+					.login.button
+					{
+
+						background-color: #6aa13e;
+						width:80%;
+						margin-left: 10vw;
+						margin-top: 6vh;
+						border-radius: 3px;
+						box-shadow: 1px 1px 1px 0px #888888;
+						margin-bottom:  14vh;
+
+
+					}
+	.top-content
+	{
+		height: 75%;
+		text-align: center;
+
+
+		h1
+		{
+			color: $auth-color;
+		}
+	}
+
+	.bottom-content
+	{
+		height: 25%;
+		padding-top: 5px;
+		margin-top: 0px;
+
+		.button
+		{
+			border: none;
+			color: $auth-color;
+			font-weight: bolder;
+			font-size: 20px;
+		}
+
+		.login.button
+		{
+			background-color: $auth-login-btn-bg;
+		}
+
+		.sign-up.button
+		{
+			background-color: $auth-signup-btn-bg;
+		}
+	}
+}

@@ -1,0 +1,82 @@
+<ion-side-menus enable-menu-with-back-views="true" class="patientSidemenu-view">
+  <ion-side-menu-content class="post-size-14px">
+    <ion-nav-bar class="bar app-top-bar" align-title="left">
+
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="right" class="main-menu" expose-aside-when="large">
+    <ion-content>
+      <ion-list>
+       <ion-item class="heading-item" nav-clear menu-close ui-sref="">
+          <!--<div class="user-image-container">
+            <pre-img ratio="_1_1" helper-class="rounded-image">
+              <img class="user-image" ng-src="/img/ionic.png" spinner-on-load>
+          	</pre-img>
+          </div>-->
+          <!--<h2 class="greeting">Name</h2>
+         <p class="message">Welcome back Name</p>-->
+        </ion-item>
+        <ion-item class="item-icon-left" ui-sref="app.profile" menu-close>
+          <i class="icon ion-android-bookmark"></i>
+          <h2 class="menu-text">Profile</h2>
+        </ion-item>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.mydoctors">
+          <i class="icon ion-radio-waves"></i>
+          <h2 class="menu-text">My Doctors</h2>
+        </ion-item>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.myconsultations">
+          <i class="icon ion-social-wordpress"></i>
+          <h2 class="menu-text">My Consultations</h2>
+        </ion-item>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.patientPayments">
+          <i class="icon ion-wand"></i>
+          <h2 class="menu-text">Payments</h2>
+        </ion-item>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.miscellaneous">
+          <i class="icon ion-asterisk"></i>
+          <h2 class="menu-text">Review App</h2>
+        </ion-item>
+        <!--<ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.forms">
+          <i class="icon ion-document"></i>
+          <h2 class="menu-text">Notifications</h2>
+          <ion-toggle ng-model="airplaneMode" toggle-class="toggle-assertive">Airplane Mode</ion-toggle>
+        </ion-item>-->
+        <!-- <b>{{ simple || false }}</b>-->
+        <!--<ion-toggle class="item item-icon-left dark-bg" ion-toggle-text ng-model="simple">
+          <i class="icon ion-document"></i><h2 class="menu-text">Notification</h2>
+        </ion-toggle>-->
+        <ion-item style="background-color:#20242c !important" nav-clear   >
+
+      <div ><h2 class="menu-text"><i class="icon ion-document"></i>Notification</h2></div>                                            <div class="slideThree">
+           <input type="checkbox" value="None" id="slideThree" name="check" checked />
+           <label for="slideThree"></label>
+         </div>
+       </ion-item>
+      <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.customercare">
+          <i class="icon ion-gear-a"></i>
+          <h2 class="menu-text">Customer Care</h2>
+        </ion-item>
+
+
+
+
+        <!--<button class="button button button-stable button-block" ng-click="showLogOutMenu()">
+        Logout
+      </button>-->
+    </ion-list>
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar-positive item-icon-left">
+
+        <i class="icon ion-android-bookmark"></i>
+        <h5 class="menu-text">Signout</h5>
+
+
+    </ion-footer-bar>
+  </ion-side-menu>
+</ion-side-menus>

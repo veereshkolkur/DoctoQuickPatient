@@ -1,0 +1,218 @@
+.doctorscreen-view
+{
+  font-family: Ubuntu,bold,sans-serif !important;
+  body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  font-family: Ubuntu,bold,sans-serif !important;
+  }
+  ion-content
+  {
+    -webkit-overflow-scrolling: touch !important;
+    overflow:  visible !important;
+  }
+
+  .slider-pager {
+  position: absolute;
+  bottom: 20px;
+  z-index: $z-index-slider-pager;
+  width: 100%;
+  height: 15px;
+  text-align: center;
+
+  .slider-pager-page {
+    display: inline-block;
+    margin: 0px 3px;
+    width: 15px;
+    color: red;
+    text-decoration: none;
+    opacity: 0.3;
+
+    &.active {
+      @include transition(opacity 0.4s ease-in);
+      opacity: 2;
+      color-fill: red;
+      }
+    }
+  }
+    scroll-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    margin-top: -1px;
+    padding-top: 1px;
+    margin-bottom: -1px;
+    width: auto;
+    height: auto;
+  }
+	.top-content
+	{
+    position: absolute;
+    margin-top: 0vh;
+    display: inline-grid;
+    width: 100vmin;
+		height:50%;
+		text-align: center;
+    background-color: #69a33d;
+    overflow:   scroll !important;
+    box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+    font-family: Ubuntu,bold,sans-serif !important;
+    &.after{
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+	}
+    .top-content  h2{
+      font-family: Ubuntu,bold,sans-serif !important;
+        font-size: 4vw;
+        color: white;
+      }
+    .item-divider{
+    font-family: Ubuntu,bold,sans-serif !important;
+    position:  relative;
+    min-height: 20px;
+    background-color: #dbdbdb;
+    color: #222;
+    font-weight: 500;
+    text-align: center;
+    margin-top: -1vh;
+
+    }
+     .item-avatar{
+      background-color: #69a33d;
+      width: 100%;
+      width: 100vmin;
+      text-align: left;
+      margin-top: 0vh;
+      border-left: none;
+      border-right: none;
+      border-bottom: 3px ;
+      border-width:  thin;
+      border-color: #558128;
+      p{
+        font-size: 3vw;
+        line-height: 12px;
+        color: white;
+      }
+
+    }
+    .item-avatar:first-child {
+      margin-top: 0vh;
+    border-top: none;
+    box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+    }
+    .item-avatar:last-child {
+    border-bottom: none;
+    display: block;
+    position: absolute;
+    margin-bottom:80px !important;
+    }
+
+    .slideTwo {
+      width: 122px;
+      height: 50px;
+      background: #69a33d;
+      margin-top:-58vh;
+      margin-left:35vw;
+      position: absolute;
+      border-radius: 50px;
+
+      box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+    }
+    .slideTwo:after {
+      content: 'OFFLINE';
+      color: white;
+      position: absolute;
+      top:15px;
+      left:20vw;
+      z-index: 0;
+      font: 12px/26px Arial, sans-serif;
+      font-weight: bold;
+      text-align: center;
+      //text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15);
+    }
+    .slideTwo:before {
+      content: 'ONLINE';
+      color: white;
+      position: absolute;
+      top:15px;
+      left: 10px;
+      z-index: 0;
+      font: 12px/26px Arial, sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .slideTwo label {
+      display: block;
+      width: 55px;
+      height: 55px;
+      cursor: pointer;
+      position: absolute;
+      top: -3px;
+      left: 3px;
+      z-index: 1;
+      background: red;
+      background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+      background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+      border-radius: 50px;
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+
+    }
+    .slideTwo input[type=checkbox] {
+      visibility: hidden;
+    }
+    .slideTwo input[type=checkbox]:checked + label {
+      left: 65px;
+
+    }
+
+      .bottom-content
+        {
+
+          width: 100%;
+          height: auto;
+          font-size: 3vw;
+          //background: red;
+          position: absolute;
+          margin-top: 10vh;
+          bottom: 80vh; /* Adjust to where you want it */
+          right: 50vw; /* Adjust to where you want it */
+          z-index: 9999;
+        }
+        .toggle {
+          width:100vmin;
+          position: relative;
+          display: inline-block;
+          pointer-events:  fill;
+          margin-left: 45vw;
+          margin-top: -20vh;
+          padding: 5px;
+
+      }
+      .toggle .track {
+        @include transition-timing-function(ease-in-out);
+        @include transition-duration($toggle-transition-duration);
+        @include transition-property((background-color, border));
+
+        display: inline-block;
+        box-sizing: border-box;
+        width: $toggle-width;
+        height: $toggle-height;
+        border: solid $toggle-border-width red;
+        border-radius: $toggle-border-radius;
+        background-color: red;
+        content: ' ';
+        cursor: pointer;
+        pointer-events: none;
+        }
+
+}

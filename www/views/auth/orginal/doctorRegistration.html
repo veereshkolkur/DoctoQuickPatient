@@ -1,0 +1,32 @@
+<ion-view title="walkthrough-view">
+    <ion-content padding="'true'" class="has-header">
+        <div>
+            <center><h3>Doctor Registration</h3></center>
+        </div>
+        <div class="spacer" style="width: 300px; height: 9px;"></div>
+        <center><img src="img/progress1.png" width="50%" height="auto" style="width: 50%; height: auto;"></center>
+        <div class="spacer" style="width: 300px; height: 12px;"></div>
+        <div>
+            <center><font size=3>DoctorQuick is a unique technology to help you consult and treat patients at your own time and place from different cornerof the country and get paid for your time.</font></center>
+        </div>
+        <div class="spacer" style="width: 300px; height: 18px;"></div>
+        <form class="" >
+            <label class="item item-input" name="doc_fname">
+                <input type="text" placeholder="First Name" ng-model="doc_fname">
+            </label>
+            <div class="spacer" style="width: 300px; height: 7px;"></div>
+            <label class="item item-input" name="doc_mname">
+
+                <input type="text" placeholder="Middle Name" ng-model="doc_mname">
+            </label>
+            <div class="spacer" style="width: 300px; height: 7px;"></div>
+            <label class="item item-input" name="doc_lname" >
+                <input type="text" placeholder="Last Name" ng-model="doc_lname">
+            </label>
+            <div class="spacer" style="width: 300px; height: 43px;"></div>
+            <a  class="sign-up button button button-block button-balanced " ui-sref="auth.doctorRegistration2">Next</a>
+
+        </form>
+        Full Name: {{doc_fname + " " + doc_mname}}
+    </ion-content>
+</ion-view>

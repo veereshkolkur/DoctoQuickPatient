@@ -1,0 +1,83 @@
+.medical-speciality-view
+{
+  background-color: #e2e2e2 !important;
+  font-family: Ubuntu,bold,sans-serif !important;
+  .item{
+   background-color: #e7e7e7;
+   max-width: 100%;
+   width: 100vmin;
+   max-height: 100%;
+   text-align: left;
+   margin-top: 0vh;
+   //padding-left: 10px;
+   border-left: none;
+   border-right: none;
+   border-bottom: 1px solid #cbcbcb;
+   border-width:  auto;
+     h2 {
+
+      font-size: 4vw;
+      font-weight: normal;
+
+    }
+    p{
+      font-weight: lighter;;
+      font-size: 3.5vw;
+      margin-top: -1vh;
+    }
+  }
+  .icon{
+  margin-top: 3vh;
+  margin-left: -2vw;
+  padding-right: 30px;
+  max-width: 100%;
+  left: 10;
+
+  .item:first-child {
+    border-top: none;
+    }
+    .item:last-child {
+    border-bottom: none;
+    display: block;
+    position: absolute;
+    margin-bottom:80px !important;
+
+    }
+}
+
+
+	.top-content
+	{
+		height: 75%;
+		text-align: center;
+  	h1
+		{
+			color: $auth-color;
+		}
+	}
+
+	.bottom-content
+	{
+		height: 25%;
+		padding-top: 5px;
+		margin-top: 0px;
+
+		.button
+		{
+			border: none;
+			color: $auth-color;
+			font-weight: bolder;
+			font-size: 20px;
+		}
+
+		.login.button
+		{
+			background-color: $auth-login-btn-bg;
+		}
+
+		.sign-up.button
+		{
+			background-color: $auth-signup-btn-bg;
+		}
+	}
+}

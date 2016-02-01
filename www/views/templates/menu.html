@@ -1,0 +1,69 @@
+<ion-view class="sidemenu-view" cache-view="false" enable-menu-with-back-views="true" >
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content class="post-size-14px">
+
+    <ion-nav-bar class="bar app-top-bar" align-title="left">
+    <ion-nav-buttons side="right">
+    <p ng-model="status"></p>
+    <img class="onlineOffline" align=right src="img/dq_notification_red-circle_540x960.png" width="auto" height="25px" margin=10px /><!--adds onlin/offline image-->
+        <a class="button button-icon button-clear ion-navicon" menu-toggle="right">
+        </a>
+      </ion-nav-buttons>
+      <div class="slideTwo" ng-controller="doctorScreensCtrl" >
+            <input type="checkbox" class="track" value="1" id="slideTwo" name="check" ng-click="setStatus(item.checked);" ng-model="item.checked" ng-checked="item.checked" />
+            <label for="slideTwo"></label>
+      </div>
+
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="right" class="main-menu" expose-aside-when="large">
+    <ion-content>
+      <ion-list>
+       <ion-item class="heading-item" nav-clear menu-close ui-sref="">
+          <!--<div class="user-image-container">
+            <pre-img ratio="_1_1" helper-class="rounded-image">
+              <img class="user-image" ng-src="/img/ionic.png" spinner-on-load>
+          	</pre-img>
+          </div>-->
+          <!--<h2 class="greeting">Name</h2>
+         <p class="message">Welcome back Name</p>-->
+        </ion-item>
+        <ion-item class="item-icon-left" ui-sref="templates.doctorprofile" menu-close>
+          <i class="icon ion-android-bookmark"></i>
+          <h2 class="menu-text">Profile</h2>
+        </ion-item>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="templates.consultedpatients">
+          <i class="icon ion-social-wordpress"></i>
+          <h2 class="menu-text">My Consultations</h2>
+        </ion-item>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="templates.doctorprofile">
+          <i class="icon ion-asterisk"></i>
+          <h2 class="menu-text">Review App</h2>
+        </ion-item>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="templates.customercare">
+            <i class="icon ion-gear-a"></i>
+            <h2 class="menu-text">Customer Care</h2>
+          </ion-item>
+          <ion-item class="item-icon-left" nav-clear menu-close ui-sref="templates.doctoraccounts">
+              <i class="icon ion-android-wifi"></i>
+              <h2 class="menu-text">Accounts Statement</h2>
+            </ion-item>
+            <ion-item style="background-color:#20242c !important" nav-clear   >
+
+          <div ><h2 class="menu-text"><i class="icon ion-document"></i>Notification</h2></div>                                            <div class="slideThree">
+               <input type="checkbox" value="None" id="slideThree" name="check" checked />
+               <label for="slideThree"></label>
+             </div>
+           </ion-item>
+
+    </ion-list>
+
+
+    </ion-content>
+    
+  </ion-side-menu>
+</ion-side-menus>
+
+</ion-view>

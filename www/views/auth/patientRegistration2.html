@@ -1,0 +1,41 @@
+<ion-view class="patient-reg-2-view" cache-view="false">
+  <ion-content scroll="false">
+
+    <img src="img/iOS-Assets-v01_patient_registration_progress2.png" >
+    <div class="detailspatient">
+
+       <p> Age, gender, email &amp; password</p>
+
+   </div>
+   <form class="list">
+
+      <div class="input-types">
+
+          <label class="item item-input" name="doc_phnum">
+              <input type="tel" placeholder="Mobile Number">
+          </label>
+
+            <button small  class=" button-small button-light   ion-male"   ng-click="gender();">Male</button>
+            <button small class="female button-small button-light   ion-female"  ng-click="gender();">Female</button>
+          <div class="e-mail">
+                <label class=" item item-input" name="pat_email">
+                    <input type="email" placeholder="Email Address">
+                </label>
+
+          </div>
+          <div class="password">
+            <label class="item item-input" name="pat_email">
+                <input type="password" placeholder="Password">
+            </label>
+
+          </div>
+
+      </div>
+          <button class="login button button-block button-calm  " ui-sref="auth.patientRegistration3">Next</button>
+
+            <h2 > By Signing in, I agree to DoctorQuicks </h2>
+            <h3 class="link"><a href="#">Terms and Conditions</a> </h3>
+          
+        </form>
+  </ion-content>
+</ion-view>

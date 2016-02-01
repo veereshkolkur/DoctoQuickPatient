@@ -1,0 +1,92 @@
+.patient-reg-1-view
+{
+	font-family: Ubuntu,bold,sans-serif !important;
+
+	ion-content{
+		overflow-y: scroll !important;
+	}
+
+
+	.mainHeading
+	{
+			text-align: center;
+			margin-top: 4vh;
+			font-size:6vw;
+			font-family: inherit;
+			font-weight: 400;
+	}
+	img{
+		margin-top: 4vh;
+		margin-left: 27vw;
+		max-width: 100%;
+		width: 47vmin !important;
+		height: auto !important;
+
+	}
+	.Content
+  {
+    font-size: 4vw;
+		margin-top: 2vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family:inherit;
+    font-weight: normal;
+		text-align: center;
+  }
+	.list{
+		max-width: 100%;
+		width: 80vmin !important;
+		margin-top: 4vh;
+	}
+	.item.item-input{
+		min-width: 20%;
+		width: 95%;
+		height:14vmin;
+		text-align: center;
+		margin-left: 11vw;
+		margin-bottom: 2vh;
+		border-radius: 3px;
+		//box-shadow: 1px 1px 1px 0px #888888;
+	}
+
+		.login.button
+		{
+		background-color: #6aa13e;
+    max-width: 100%;
+    width: 76vmin;
+    height:14vmin;
+    font-size: 5vw;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 11vw;
+    border: 1px;
+    margin-top: 8vh;
+		}
+		h2
+		{
+			font-size: 3.5vw;
+			text-align: center;
+			color:white;
+			margin-left: 18vw;
+			margin-top: 1vh;
+		}
+		h3
+		{
+				font-size: 3.5vw;
+				color:white;
+				margin-left: 18vw;
+				text-align: center;
+				padding-left: 18px;
+				padding-top: 1px;
+				a{
+					color: inherit;
+				}
+
+		}
+
+		.sign-up.button
+		{
+			background-color: $auth-signup-btn-bg;
+		}
+
+}

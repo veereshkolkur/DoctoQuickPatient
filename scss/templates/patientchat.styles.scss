@@ -1,0 +1,147 @@
+.patient-chat-view
+{
+	background-color:#e7e7e7 !important;
+	font-family: Ubuntu,bold,sans-serif !important;
+	//ELASTICHAT
+	body {
+		cursor: url('http://ionicframework.com/img/finger.png'), auto;
+		}
+		.item-avatar{
+		 background-color: #e2e2e2;
+		 width: 100%;
+		 width: 100vmin;
+		 height: 100%;
+		 height: 30vmin;
+		 text-align: center;
+		 margin-top: 0vh;
+		 border: none;
+		 padding-bottom: 2px;
+		 img{
+		  margin-top: 1vh !important;
+		  max-width: 100%;
+		  max-height: 100%;
+		  width: 20vmin;
+		  height: 19vmin;
+		  padding: 5px;
+		  background-color: #dedad7 !important;
+		  margin-left: -2vw;
+		 }
+		 h2{
+
+			 margin-left: 1vw;
+			 margin-top: 2vh;
+			 font-size: 5vw;
+			 padding-right: 10px;
+		 }
+		}
+
+		.item-avatar:first-child {
+		border-top: none;
+		}
+		.item-avatar:last-child {
+		border-bottom: none;
+		display: block;
+		position: absolute;
+		margin-bottom:80px !important;
+		}
+		.practice{
+		  margin-left:6vw !important;
+		  margin-top:-1vh;
+			font-size:4vw;
+		}
+		.degrees{
+		  margin-top: -1vh;
+			  margin-left:-9vw !important;
+		}
+		.bar .button {
+	//	background-color: red;
+
+  	margin-left:5vw !important;
+		margin-top: 1vh;
+		padding-top: 2vh;
+
+	}
+			.bar-stable .button.button-icon {
+		    border-color: transparent;
+		    background: none;
+				margin-top: 2vh;
+		}
+.bar-footer {
+	overflow: visible !important;
+	background-color:#e7e7e7 !important;
+}
+
+		.bar-footer textarea {
+		position: absolute;
+		max-width: 100%;
+		width: 70vmin;
+		padding-right: 0px;
+		height: 35px;
+		margin-left: 10vw;
+		margin-top: -3vh;
+		}
+
+/* fixes an ios bug bear */
+button.ion-android-send {
+padding-top: 2px;
+}
+
+/* add this to keep your footer buttons down
+at the bottom as the textarea resizes */
+	.footer-btn-wrap {
+//		background-color: red;
+	position: relative;
+	height: 100%;
+	width: 50px;
+	top: 7px;
+	}
+
+.footer-btn {
+position: absolute !important;
+bottom: 0;
+}
+
+//
+	.top-content
+	{
+		height: 75%;
+		text-align: center;
+
+		h1
+		{
+			color: $auth-color;
+		}
+	}
+	.bar-assertive{
+		background-color: #e2e2e2 !important;
+		border: none;
+
+	}
+	.bar.bar-assertive.bar-footer {
+    background-image: linear-gradient(180deg, #e2e2e2, #e2e2e2 50%, transparent 50%);
+	}
+	.bottom-content
+	{
+		height: 25%;
+		padding-top: 5px;
+		margin-top: 0px;
+
+		.button
+		{
+			border: none;
+			color: $auth-color;
+			font-weight: bolder;
+			font-size: 20px;
+		}
+
+		.login.button
+		{
+			background-color: $auth-login-btn-bg;
+		}
+
+		.sign-up.button
+		{
+			background-color: $auth-signup-btn-bg;
+		}
+	}
+}
